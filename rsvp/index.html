@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>David and Alex - RSVP</title>
+    <script src="http://zeptojs.com/zepto.min.js"></script>
+    <script src="/js/rsvp.js"></script>
+    <style>.hidden { display: none; }</style>
+</head>
+<body>
+    <h2>RSVP</h2>
+    <p id="errorMsg" class="hidden"></p>
+    <form onsubmit="validateAndSubmit(); return false;">
+        <p><input type="text" id="name" name="name" placeholder="Full Name" maxlength="50"></p>
+        <p><input type="text" id="email" name="email" placeholder="Email" maxlength="50"></p>
+        <p><input type="tel" id="phone" name="phone" placeholder="Phone" maxlength="16"></p>
+        <p>Plus One? <input type="checkbox" id="plusOne" name="plusOne"></p>
+        <p id="hiddenInput" class="hidden"><input type="text" id="plusOnesName" name="plusOnesName" placeholder="Plus One's Name" maxlength="50"></p>
+        <p><input type="submit" value="RSVP!"></p>
+    </form>
+</body>
+</html>
+
