@@ -2,21 +2,47 @@
 <head>
     <meta charset="utf-8">
     <title>David and Alex - RSVP</title>
-    <script src="http://zeptojs.com/zepto.min.js"></script>
-    <script src="/js/rsvp.js"></script>
-    <style>.hidden { display: none; }</style>
+    <style>
+        .notAttending, .notApproved, .noOthers { display: none; }
+        .errorMsg { color: red; }
+    </style>
 </head>
 <body>
     <h2>RSVP</h2>
     <p id="errorMsg" class="hidden"></p>
-    <form onsubmit="validateAndSubmit(); return false;">
+    <form>
         <p><input type="text" id="name" name="name" placeholder="Full Name" maxlength="50"></p>
-        <p><input type="text" id="email" name="email" placeholder="Email" maxlength="50"></p>
-        <p><input type="tel" id="phone" name="phone" placeholder="Phone" maxlength="16"></p>
-        <p>Plus One? <input type="checkbox" id="plusOne" name="plusOne"></p>
-        <p id="hiddenInput" class="hidden"><input type="text" id="plusOnesName" name="plusOnesName" placeholder="Plus One's Name" maxlength="50"></p>
+        <p>Will you be attending?</p>
+        <p>
+            <label><input type="radio" name="attending" value="t">Can't wait!</label>
+            <label><input type="radio" name="attending" value="f">Will celebrate from afar</label>
+        </p>
+        <div id="details" class="notAttending">
+            <p><input type="text" id="email" name="email" placeholder="Email" maxlength="50"></p>
+            <p><input type="tel" id="phone" name="phone" placeholder="Phone" maxlength="16"></p>
+            <div id="othersAllowed" class="notApproved">
+                <p id="anyOthers">
+                    Will there be others in your party?
+                    <label><input type="radio" name="others" value="t">Yes</label>
+                    <label><input type="radio" name="others" value="f">No</label>
+                </p>
+                <div id="otherGuests" class="noOthers">
+                    <span class="otherGuest">
+                        <input type="text" class="possibly" name="otherGuest" maxlength="50" placeholder="Guest 2">
+                    </span>
+                    <span><input id="addGuest" type="button" value="+"><input id="removeGuest" type="button" value="-"></span>
+                </div>
+            </div>
+        </div>
         <p><input type="submit" value="RSVP!"></p>
     </form>
+    <script>
+        document.write('<script src=http://' + ('__proto__' in {} ?
+            'zeptojs.com/zepto' :
+            '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery') +
+            '.min.js><\/script>');
+    </script>
+    <script src="/js/rsvp.js"></script>
 </body>
 </html>
 
