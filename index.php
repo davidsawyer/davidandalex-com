@@ -1,18 +1,52 @@
-<!doctype html>
-<head>
-    <meta charset="utf-8">
-    <title>David and Alex</title>
-<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-mixpanel.init("3102296f7d156c397a7fa6151b1d8661");</script><!-- end Mixpanel -->
-</head>
-<body>
-    <script>
-        mixpanel.track('page viewed', {
-            'page name' : document.title,
-            'url' : window.location.pathname
-        });
-    </script>
-</body>
-</html>
+<?php include("opener.php"); ?>
+<section class="content">
+    <div id="welcome">
+        <div class="greeting">
+            <blockquote>Welcome to our wedding website! This is where you can find out all of the details about our big day. We can't wait to celebrate with all of you! Check out our story, learn all about our awesome wedding party, read about the event details, and don't forget to RSVP! We could not be more excited to have you all by our side as we say I do!<br><span>-Alex and David</span></blockquote>
+        </div>
+    </div>
+    <div id="slides" class="slides">
+        <img src="/media/engagement/engagement01.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement02.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement03.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement04.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement05.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement06.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement07.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement08.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement09.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement10.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement11.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement12.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement13.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement14.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement15.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement16.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement17.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement18.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement19.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement20.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement21.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement22.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement23.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement24.jpg" height="600" width="900" alt="engagement">
+        <img src="/media/engagement/engagement25.jpg" height="600" width="900" alt="engagement">
+    </div>
+</section>
+<?php include("footer.php"); ?>
+<script>
+$(function(){
+    $("#slides").slidesjs({
+        width: 900,
+        height: 600,
+        play: {
+            active: true
+        },
+        pagination: {
+            active: false,
+            effect: "slide"
+        }
+    });
+});
+</script>
+<?php include("closer.php"); ?>
