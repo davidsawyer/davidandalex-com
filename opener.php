@@ -1,5 +1,4 @@
-<?php
-    $navItems = [
+<?php $navItems = [
         "Home"          => ["path" => "/",              "title" => "Alex and David Are Getting Married"],
         "Our Story"     => ["path" => "/our-story",     "title" => "Alex and David - Our Story"],
         "The Wedding"   => ["path" => "/the-wedding",   "title" => "Alex and David - The Wedding"],
