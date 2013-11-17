@@ -1,13 +1,13 @@
 <?php
-    // $host = "ec2-54-225-96-191.compute-1.amazonaws.com";
-    // $user = "gicninjrhsujub";
-    // $pass = "I8fSUwDxu4SYKEYUlpZIR-Wz9w";
-    // $db = "dan6gmpo4lnnvq";
+    $host = "ec2-54-225-96-191.compute-1.amazonaws.com";
+    $user = "gicninjrhsujub";
+    $pass = "I8fSUwDxu4SYKEYUlpZIR-Wz9w";
+    $db = "dan6gmpo4lnnvq";
 
-    $host = "localhost";
-    $user = "dsawyer";
-    $pass = "psql";
-    $db = "testdb";
+    // $host = "localhost";
+    // $user = "dsawyer";
+    // $pass = "psql";
+    // $db = "testdb";
 
     $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
         or die ("Could not conect: " . pg_last_error());
