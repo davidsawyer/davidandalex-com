@@ -1,10 +1,11 @@
-<?php $navItems = array(
-        "Home"          => ["path" => "/",              "title" => "Alex and David Are Getting Married"],
-        "Our Story"     => ["path" => "/our-story",     "title" => "Alex and David - Our Story"],
-        "The Wedding"   => ["path" => "/the-wedding",   "title" => "Alex and David - The Wedding"],
-        "RSVP"          => ["path" => "/rsvp",          "title" => "Alex and David - RSVP"],
-        "Wedding Party" => ["path" => "/wedding-party", "title" => "Alex and David - Wedding Party"],
-        "Registry"      => ["path" => "/registry",      "title" => "Alex and David - Registry"]
+<?php
+$navItems = array(
+        "Home"          => array("path" => "/",              "title" => "Alex and David Are Getting Married"),
+        "Our Story"     => array("path" => "/our-story",     "title" => "Alex and David - Our Story"),
+        "The Wedding"   => array("path" => "/the-wedding",   "title" => "Alex and David - The Wedding"),
+        "RSVP"          => array("path" => "/rsvp",          "title" => "Alex and David - RSVP"),
+        "Wedding Party" => array("path" => "/wedding-party", "title" => "Alex and David - Wedding Party"),
+        "Registry"      => array("path" => "/registry",      "title" => "Alex and David - Registry")
     );
 
     $menu = "";
