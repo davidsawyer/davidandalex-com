@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="/js/jquery.slides.min.js"></script>
-    <script type="text/javascript" src="/js/menuBar.js"></script>
+    <script type="text/javascript" src="/js/menuBar.min.js"></script>
     <?php if ($_SERVER["REQUEST_URI"] == "/rsvp") { ?>
     <script type="text/javascript" src="/js/rsvp.min.js"></script>
     <?php } ?>
