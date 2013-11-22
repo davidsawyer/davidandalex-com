@@ -7,7 +7,7 @@
             $remaining = $date - time();
             $days = floor($remaining / 86400);
             echo $days; ?> days!</span>
-        <span class="madeBy"><i class="tools"></i><span class="whom">Site built by David Sawyer. Branding and design by Kimmie Oldenburg.</span></span>
+        <span class="madeBy"><i class="tools"></i><span class="whom">Site built by David Sawyer. Branding by Kimmie Oldenburg.</span></span>
     </footer>
     <script>
         mixpanel.track('page viewed', {
