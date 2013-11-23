@@ -3,9 +3,11 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.slides.min.js"></script>
     <script type="text/javascript" src="/js/menuBar.min.js"></script>
-    <?php if ($_SERVER["REQUEST_URI"] == "/rsvp") { ?>
+    <?php if ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/our-story") { ?>
+    <script type="text/javascript" src="/js/jquery.slides.min.js"></script>
+    <?php }
+    if ($_SERVER["REQUEST_URI"] == "/rsvp") { ?>
     <script type="text/javascript" src="/js/rsvp.min.js"></script>
     <?php } ?>
     <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="/js/mixpanel-2.2.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
