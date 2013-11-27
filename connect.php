@@ -1,23 +1,24 @@
 <?php
-    $host = "ec2-54-225-96-191.compute-1.amazonaws.com";
-    $user = "gicninjrhsujub";
-    $pass = "I8fSUwDxu4SYKEYUlpZIR-Wz9w";
-    $db = "dan6gmpo4lnnvq";
+    // $host = "ec2-54-225-96-191.compute-1.amazonaws.com";
+    // $user = "gicninjrhsujub";
+    // $pass = "I8fSUwDxu4SYKEYUlpZIR-Wz9w";
+    // $db = "dan6gmpo4lnnvq";
 
-    // $host = "localhost";
-    // $user = "dsawyer";
-    // $pass = "psql";
-    // $db = "testdb";
+    $host = "localhost";
+    $user = "dsawyer";
+    $pass = "psql";
+    $db = "testdb";
 
     $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
         or die ("Could not conect: " . pg_last_error());
 
     $name = pg_escape_string($_POST['name']);
     $attending = pg_escape_string($_POST['attending']);
+    $email = pg_escape_string($_POST['email']);
+    $song_request = pg_escape_string($_POST['song']);
     $other_guests = pg_escape_string($_POST['otherGuests']);
 
-
-    $query = "insert into rsvp (name, attending, other_guests) values ('$name', '$attending', '$other_guests')";
+    $query = "insert into rsvp2 (name, attending, email, song_request, other_guests) values ('$name', '$attending', '$email', '$song_request', '$other_guests')";
     $result = pg_query($query);
     if ($result) {
         $response = array("status" => "200");

@@ -567,7 +567,7 @@ form {
     input {
         border: 0;
 
-        &[type="text"], &[type="email"], &[type="tel"] {
+        &[type="text"], &[type="email"] {
             border-bottom: 1px dotted #666;
             border-radius: 0;
             font-family: 'Josefin Sans', sans-serif;

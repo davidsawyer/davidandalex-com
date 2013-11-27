@@ -64,11 +64,14 @@ $(function() {
 });
 
 var validateAndSubmit = function() {
+    var emailRegex = /.+@.+\..+/i;
     ad.errorMsg = "";
 
     // set required fields
     var name = $.trim($('#name').val()),
         attending = $("input[name='attending']:checked").val(),
+        email = $.trim($('#email').val()),
+        song = $.trim($('#song').val()),
         otherGuests = "";
 
     if (! name) {
@@ -79,7 +82,9 @@ var validateAndSubmit = function() {
         ad.errorMsg = "Please let us know if you are coming or not!";
     } else if (attending === "t") {
         var othersAreInParty = $("input[name='others']:checked").val();
-        if (othersAreInParty === undefined) {
+        if(! emailRegex.test(email)) {
+            ad.errorMsg = "Please enter a valid email address.";
+        } else if (othersAreInParty === undefined) {
             ad.errorMsg = "Please let us know if there will be anyone else in your party!";
         } else if (othersAreInParty === "t") {
             otherGuests = compileNames();
@@ -94,6 +99,8 @@ var validateAndSubmit = function() {
             data: {
                 name: name,
                 attending: attending,
+                email: email,
+                song: song,
                 otherGuests: otherGuests
             },
             dataType: 'json',
@@ -101,6 +108,9 @@ var validateAndSubmit = function() {
             success: function(response) {
                 if (response.status == 200) {
                     $("form").animate({ opacity : 0 }, 500);
+                    $('html,body').animate({
+                        scrollTop: $('header').height()
+                    }, 200);
                 } else {
                     ad.errorMsg = "Uh oh. Something went wrong. Try to submit again in a few minutes. If all else fails, call David.";
                 }
@@ -116,8 +126,8 @@ var validateAndSubmit = function() {
         $errorMsg.text(ad.errorMsg);
         $errorMsg.removeClass("hidden");
         $('html,body').animate({
-          scrollTop: $('header').height()
-      }, 200);
+            scrollTop: $('header').height()
+        }, 200);
     } else {
         $("#errorMsg").addClass("hidden");
     }
