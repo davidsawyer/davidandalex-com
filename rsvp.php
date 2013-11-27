@@ -23,7 +23,7 @@
                 <p>
                     <span class="prompt">any song requests? (optional)</span>
                     <br>
-                    <input type="text" id="song" name="song" placeholder="anything but..." maxlength="100">
+                    <input type="text" id="song" name="song" placeholder="play some..." maxlength="100">
                 </p>
                 <p id="anyOthers">
                     <span class="prompt">Will you be bringing your significant other or family?</span>
