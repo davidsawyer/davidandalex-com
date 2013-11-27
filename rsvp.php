@@ -1,7 +1,7 @@
 <?php include("opener.php"); ?>
 <section class="content">
     <div>
-        <form>
+        <form novalidate>
             <p id="errorMsg" class="hidden"></p>
             <p>
                 <span class="prompt">full name</span>
@@ -15,6 +15,16 @@
                 <label><input type="radio" name="attending" value="f">will celebrate from afar</label>
             </p>
             <div id="details" class="notAttending">
+                <p>
+                    <span class="prompt">email address</span>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="hairydawg@uga.edu" maxlength="100">
+                </p>
+                <p>
+                    <span class="prompt">any song requests? (optional)</span>
+                    <br>
+                    <input type="text" id="song" name="song" placeholder="anything but..." maxlength="100">
+                </p>
                 <p id="anyOthers">
                     <span class="prompt">Will you be bringing your significant other or family?</span>
                 </p>
