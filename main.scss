@@ -993,12 +993,24 @@ footer {
         }
     }
 
-    &:hover .whom {
-        display: block;
+    @include respond-to(tablets) {
+        &:hover .whom {
+            display: block;
+        }
+
+        &:hover .tools {
+            top: -2px;
+        }
     }
 
-    &:hover .tools {
-        top: -2px;
+    @include respond-to(desktops) {
+        &:hover .whom {
+            display: block;
+        }
+
+        &:hover .tools {
+            top: -2px;
+        }
     }
 }
 
