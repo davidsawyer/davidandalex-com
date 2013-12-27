@@ -172,8 +172,9 @@ noscript {
 }
 
 h1 {
-    left: 200%;
-    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
 }
 
 #navigation {
