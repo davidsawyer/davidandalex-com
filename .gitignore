@@ -1,4 +1,6 @@
 .DS_Store
-.sass_cache
+.sass-cache
+.swp
+.orig
 getNames.php
 rsvp_old
