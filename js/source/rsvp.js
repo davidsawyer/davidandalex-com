@@ -1,58 +1,59 @@
-ad = {
-    approvedNames: [],
-    errorMsg: ""
-};
+(function() {
+    ad = {
+        approvedNames: [],
+        errorMsg: ""
+    };
 
-var compileNames = function() {
-    var compiledNames = "";
+    var compileNames = function() {
+        var compiledNames = "";
 
-    $("input[name='otherGuest']").each(function() {
-        if (this.value.length < 6) {
-            ad.errorMsg = "Make sure to tell us the full name of everyone in your party.";
-            return "";
-        }
-        if (compiledNames !== "") {
-            compiledNames += ", " + $.trim(this.value);
-        } else {
-            compiledNames = $.trim(this.value);
-        }
-    });
+        $("input[name='otherGuest']").each(function() {
+            if (this.value.length < 6) {
+                ad.errorMsg = "Make sure to tell us the full name of everyone in your party.";
+                return "";
+            }
+            if (compiledNames !== "") {
+                compiledNames += ", " + $.trim(this.value);
+            } else {
+                compiledNames = $.trim(this.value);
+            }
+        });
 
-    return compiledNames;
-};
+        return compiledNames;
+    };
 
-var addAttendeeField = function() {
-    var totalGuests = $("input[name='otherGuest']").size() + 1;
-    if (totalGuests < 10) {
-        $(".otherGuest").last()
+    var addAttendeeField = function() {
+        var totalGuests = $("input[name='otherGuest']").size() + 1;
+        if (totalGuests < 10) {
+            $(".otherGuest").last()
             .after('<span class="otherGuest">' +
                 '<input type="text" name="otherGuest" maxlength="50" placeholder="Guest ' +
                 (totalGuests+1) +
                 '"></span>');
-    }
-};
+        }
+    };
 
-var removeAttendeeField = function() {
-    if ($("input[name='otherGuest']").size() > 1) {
-        $("input[name='otherGuest']").last().remove();
-    }
-};
+    var removeAttendeeField = function() {
+        if ($("input[name='otherGuest']").size() > 1) {
+            $("input[name='otherGuest']").last().remove();
+        }
+    };
 
-var checkAttendance = function() {
-    if ($("input[name='attending']:checked").val() === "t") {
-        $("#details").removeClass("notAttending");
-    } else {
-        $("#details").addClass("notAttending");
-    }
-};
+    var checkAttendance = function() {
+        if ($("input[name='attending']:checked").val() === "t") {
+            $("#details").removeClass("notAttending");
+        } else {
+            $("#details").addClass("notAttending");
+        }
+    };
 
-var checkIfBringingOthers = function() {
-    if ($("input[name='others']:checked").val() === "t") {
-        $("#otherGuests").removeClass("noOthers");
-    } else {
-        $("#otherGuests").addClass("noOthers");
-    }
-};
+    var checkIfBringingOthers = function() {
+        if ($("input[name='others']:checked").val() === "t") {
+            $("#otherGuests").removeClass("noOthers");
+        } else {
+            $("#otherGuests").addClass("noOthers");
+        }
+    };
 
 // bind events
 $(function() {
@@ -69,10 +70,10 @@ var validateAndSubmit = function() {
 
     // set required fields
     var name = $.trim($('#name').val()),
-        attending = $("input[name='attending']:checked").val(),
-        email = $.trim($('#email').val()),
-        song = $.trim($('#song').val()),
-        otherGuests = "";
+    attending = $("input[name='attending']:checked").val(),
+    email = $.trim($('#email').val()),
+    song = $.trim($('#song').val()),
+    otherGuests = "";
 
     if (! name) {
         ad.errorMsg = "Please enter your full name.";
@@ -134,3 +135,5 @@ var validateAndSubmit = function() {
 
     return false;
 };
+}).call(this);
+
