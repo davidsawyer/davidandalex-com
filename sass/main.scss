@@ -847,71 +847,71 @@ form {
 /* headshots */
 /* ------------------------------------------------- */
 #emma {
-    background-image: url(media/headshots/emma2.jpg);
+    background-image: url(/media/headshots/emma2.jpg);
 }
 
 #abbeys {
-    background-image: url(media/headshots/abbeys2.jpg);
+    background-image: url(/media/headshots/abbeys2.jpg);
 }
 
 #abbeyw {
-    background-image: url(media/headshots/abbeyw2.jpg);
+    background-image: url(/media/headshots/abbeyw2.jpg);
 }
 
 #alie {
-    background-image: url(media/headshots/alie2.jpg);
+    background-image: url(/media/headshots/alie2.jpg);
 }
 
 #ellie {
-    background-image: url(media/headshots/ellie2.jpg);
+    background-image: url(/media/headshots/ellie2.jpg);
 }
 
 #erin {
-    background-image: url(media/headshots/erin2.jpg);
+    background-image: url(/media/headshots/erin2.jpg);
 }
 
 #jessica {
-    background-image: url(media/headshots/jessica2.jpg);
+    background-image: url(/media/headshots/jessica2.jpg);
 }
 
 #kelly {
-    background-image: url(media/headshots/kelly2.jpg);
+    background-image: url(/media/headshots/kelly2.jpg);
 }
 
 #kimmie {
-    background-image: url(media/headshots/kimmie2.jpg);
+    background-image: url(/media/headshots/kimmie2.jpg);
 }
 
 #rachael {
-    background-image: url(media/headshots/rachael2.jpg);
+    background-image: url(/media/headshots/rachael2.jpg);
 }
 
 #austinr {
-    background-image: url(media/headshots/austinr2.jpg);
+    background-image: url(/media/headshots/austinr2.jpg);
 }
 
 #aaron {
-    background-image: url(media/headshots/aaron2.jpg);
+    background-image: url(/media/headshots/aaron2.jpg);
 }
 
 #austinl {
-    background-image: url(media/headshots/austinl2.jpg);
+    background-image: url(/media/headshots/austinl2.jpg);
 }
 
 #jack {
-    background-image: url(media/headshots/jack2.jpg);
+    background-image: url(/media/headshots/jack2.jpg);
 }
 
 #nick {
-    background-image: url(media/headshots/nick2.jpg);
+    background-image: url(/media/headshots/nick2.jpg);
 }
 
 #robert {
-    background-image: url(media/headshots/robert2.jpg);
+    background-image: url(/media/headshots/robert2.jpg);
 }
 
 #ryan {
-    background-image: url(media/headshots/ryan2.jpg);
+    background-image: url(/media/headshots/ryan2.jpg);
 }
 /* ------------------------------------------------- */
 
@@ -1046,7 +1046,7 @@ footer {
 
 a {
     &.slidesjs-next, &.slidesjs-previous, &.slidesjs-play, &.slidesjs-stop {
-        background-image: url(media/btns-next-prev.png);
+        background-image: url(/media/btns-next-prev.png);
         background-repeat: no-repeat;
         display: block;
         width: 12px;
@@ -1098,7 +1098,7 @@ a {
             width: 13px;
             height: 0;
             padding-top: 13px;
-            background-image: url(media/pagination.png);
+            background-image: url(/media/pagination.png);
             background-position: 0 0;
             float: left;
             overflow: hidden;
