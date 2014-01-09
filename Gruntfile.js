@@ -3,8 +3,14 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             sass: {
-                files: ['sass/**/*.scss','**/*.php'],
+                files: ['sass/**/*.scss'],
                 tasks: ['sass'],
+                options: {
+                    livereload: true
+                }
+            },
+            php: {
+                files: ['**/*.php'],
                 options: {
                     livereload: true
                 }
@@ -16,7 +22,7 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                style: 'compressed'
+                outputStyle: 'compressed'
             },
             dist: {
                 files: {
