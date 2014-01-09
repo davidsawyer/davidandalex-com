@@ -406,21 +406,6 @@ nav {
 }
 /* ------------------------------------------------- */
 
-/*
-#welcome {
-    @include clearfix;
-
-    .cartoon {
-        float: left;
-
-        @include respond-to(handhelds) {
-            display: block;
-            float: none;
-            margin: auto;
-        }
-    }
-*/
-
 .greeting {
     background-color: rgb(254, 249, 248);
     width: 100%;
