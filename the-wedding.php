@@ -15,7 +15,7 @@
                     <span>Time:</span>
                 </div>
                 <div class="infoValue">
-                    <span>5:30pm</span>
+                    <span>5:00pm</span>
                 </div>
             </li>
             <li>
