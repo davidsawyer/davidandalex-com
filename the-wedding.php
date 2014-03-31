@@ -28,6 +28,7 @@
                 <div class="infoValue">
                     <span>
                         <em>Econo Lodge Inn</em><br>
+                        <tel>(678) 757-1107</tel><br>
                         <a href="http://goo.gl/maps/OwPxP">2022 Etowah Drive<br>Rockmart, GA</a><br>
                         Book your stay ASAP. They fill up early this time of year.
                     </span>
