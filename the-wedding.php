@@ -7,7 +7,10 @@
                     <span>Location:</span>
                 </div>
                 <div class="infoValue">
-                    <span><em>Spring Lake</em>, 445 Government Farm Road, Rockmart, GA</span>
+                    <span>
+                        <em>Spring Lake</em><br>
+                        <a href="http://goo.gl/maps/kQKfs">445 Government Farm Road<br>Rockmart, GA</a>
+                    </span>
                 </div>
             </li>
             <li>
@@ -23,14 +26,18 @@
                     <span>Accommodations:</span>
                 </div>
                 <div class="infoValue">
-                    <span>To be determined</span>
+                    <span>
+                        <em>Econo Lodge Inn</em><br>
+                        <a href="http://goo.gl/maps/OwPxP">2022 Etowah Drive<br>Rockmart, GA</a><br>
+                        Book your stay ASAP. They fill up early this time of year.
+                    </span>
                 </div>
             </li>
         </ul>
 
     </div>
     <div class="map">
-        <a href="https://maps.google.com/maps?q=445+Government+Farm+Rd.+Rockmart,+Georgia+30153&amp;hl=en&amp;ll=33.863574,-84.751282&amp;spn=0.738934,1.18103&amp;sll=33.944274,-83.389123&amp;sspn=0.369118,0.590515&amp;hnear=Government+Farm+Rd,+Rockmart,+Polk,+Georgia+30153&amp;t=h&amp;z=10">
+        <a href="http://goo.gl/maps/kQKfs">
             <img src="/media/map.jpg" alt="map">
         </a>
     </div>

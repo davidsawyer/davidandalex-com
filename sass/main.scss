@@ -697,21 +697,32 @@ form {
     float: left;
     font-weight: 600;
     padding-right: 0.3em;
-    width: 30%;
+    width: 40%;
     text-align: right;
 
     @include respond-to(handhelds) {
-        width: 50%;
+        float: none;
+        font-size: 0.85em;
+        text-align: left;
+        width: initial;
     }
 }
 
 .infoValue {
     float: right;
+    line-height: 1.2em;
     padding-left: 0.3em;
-    width: 70%;
+    width: 60%;
+
+    a {
+        color: $green;
+        text-decoration: none;
+    }
 
     @include respond-to(handhelds) {
-        width: 48%;
+        float: none;
+        padding-left: 0.5em;
+        width: initial;
     }
 }
 
