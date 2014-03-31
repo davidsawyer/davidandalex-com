@@ -1,6 +1,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alex Auger and David Sawyer are getting Married!">
+    <meta name="description" content="Alex Auger and David Sawyer Are Getting Married!">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <script type="text/javascript" src="/js/min/jquery-2.0.3.min.js"></script>
