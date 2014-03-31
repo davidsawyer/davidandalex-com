@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                outputStyle: 'compressed'
+                style: 'compressed'
             },
             dist: {
                 files: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['sass', 'uglify', 'watch']);
