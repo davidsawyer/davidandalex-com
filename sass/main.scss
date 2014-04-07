@@ -935,6 +935,10 @@ footer {
     position: relative;
     text-align: left;
 
+    a {
+        color: #fff;
+    }
+
     @include respond-to(handhelds) {
         font-weight: 600;
         text-align: center;
