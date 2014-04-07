@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alex Auger and David Sawyer Are Getting Married!">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/main.css?v=1.1">
+    <link rel="stylesheet" type="text/css" href="/css/main.css?v=1.11">
     <script type="text/javascript" src="/js/min/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="/js/min/menuBar.min.js"></script>
     <?php if ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/our-story") { ?>
