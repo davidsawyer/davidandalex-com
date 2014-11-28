@@ -40,9 +40,9 @@ $navItems = array(
         <img src="/media/headers/header<?= $headerImageNum ?>.jpg" width="1600" alt="header">
         <h1><?= $h1 ?></h1>
     </header>
+    <div class="menu-button"><label for="toggle-menu"></label></div>
+    <input type="checkbox" id="toggle-menu">
     <div id="navigation">
-        <div class="menu-button"><label for="toggle-menu"></label></div>
-        <input type="checkbox" id="toggle-menu">
         <div id="navContainer">
             <nav>
                 <ul>
