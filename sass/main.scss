@@ -191,8 +191,6 @@ h1 {
     width: 900px;
     z-index: 15;
 
-    @include translateY(-400px);
-
     @include respond-to(tablets) {
         width: 100%;
     }
@@ -208,6 +206,7 @@ h1 {
         width: 100%;
 
         @include transition-shorthand(500ms);
+        @include translateY(-400px);
     }
 }
 
