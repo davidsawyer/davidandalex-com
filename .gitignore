@@ -7,3 +7,5 @@ rsvp_old
 node_modules
 npm-debug.log
 private
+js/min
+css
