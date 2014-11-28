@@ -6,7 +6,7 @@
     <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="/js/min/menuBar.min.js"></script>
     <?php if ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/our-story") { ?>
-    <script type="text/javascript" src="/js/vendor/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="/js/min/jquery.slides.min.js"></script>
     <?php }
     if ($_SERVER["REQUEST_URI"] == "/rsvp") { ?>
     <script type="text/javascript" src="/js/min/rsvp.min.js"></script>
