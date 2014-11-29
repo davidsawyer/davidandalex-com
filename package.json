@@ -10,7 +10,8 @@
         "grunt-contrib-concat": "latest",
         "grunt-contrib-uglify": "latest",
         "grunt-contrib-compress": "latest",
-        "grunt-contrib-watch": "latest"
+        "grunt-contrib-watch": "latest",
+        "grunt-cache-breaker": "latest"
     },
 
     "sassPath": "sass",

@@ -41,12 +41,24 @@ module.exports = function(grunt) {
                     'js/min/rsvp.min.js':           'js/source/rsvp.js'
                 }
             }
+        },
+        cachebreaker: {
+            options: {
+                match: ['/css/main.css'],
+                replacement: function() {
+                    return new Date().getTime()
+                }
+            },
+            files: {
+                src: ['head.php']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-cache-breaker');
     grunt.registerTask('default', ['sass', 'uglify', 'watch']);
-    grunt.registerTask('build', ['sass', 'uglify']);
+    grunt.registerTask('build', ['sass', 'uglify', 'cachebreaker']);
 };
