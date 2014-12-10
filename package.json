@@ -9,7 +9,6 @@
 
     "dependencies": {
         "grunt": "latest",
-        "grunt-sass": "latest",
         "grunt-contrib-sass": "latest",
         "grunt-contrib-jshint": "latest",
         "grunt-contrib-concat": "latest",
