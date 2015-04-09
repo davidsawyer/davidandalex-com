@@ -16,7 +16,7 @@
                 echo "Thanks for coming!";
             }
             ?></span>
-        <span class="madeBy"><i class="tools"></i><span class="whom">Site built by <a href="https://github.com/davidsawyer">David Sawyer</a>. Branding by <a href="http://kimberlyoldenburg.com/">Kimmie Oldenburg</a>.</span></span>
+        <span class="madeBy"><i class="tools"></i><span class="whom">Site built by <a href="http://www.david-sawyer.com">David Sawyer</a>. Branding by <a href="http://kimberlyoldenburg.com/">Kimmie Oldenburg</a>.</span></span>
     </footer>
     <script>
         mixpanel.track('page viewed', {
